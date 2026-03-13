@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('github validation new'){
           steps{
-                 git url: 'https://github.com/iammgovind/addressbook-cicd-myrepo/'
+                 git branch:'main', url: 'https://github.com/iammgovind/addressbook-cicd-myrepo/'
           }
         }
         stage('compiling the code'){
